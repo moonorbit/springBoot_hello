@@ -1,8 +1,11 @@
 package com.example.hello.controller;
 
 import com.example.hello.dto.UserDto;
+<<<<<<< HEAD
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+=======
+>>>>>>> 70ec1761363035f2dfb68fff0e51417a006af997
 import org.springframework.web.bind.annotation.*;
 
 @RestController // 해당 CLASS 는 REST API  처리하는 Controller
@@ -14,6 +17,7 @@ public class ApiController {
         return "hello spring boot!";
     }
 
+<<<<<<< HEAD
     // TEXT
     @GetMapping("/text")
     public String text(@RequestParam String account) {
@@ -33,3 +37,10 @@ public class ApiController {
         return ResponseEntity.status(HttpStatus.CREATED).body(userDto);
     }
 }
+=======
+    @PostMapping("/json")
+    public UserDto json(@RequestBody UserDto userDto) {
+        return userDto;
+    }
+}
+>>>>>>> 70ec1761363035f2dfb68fff0e51417a006af997
