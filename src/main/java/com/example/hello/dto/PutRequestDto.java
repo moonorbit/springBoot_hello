@@ -1,12 +1,12 @@
 package com.example.hello.dto;
 
+import com.fasterxml.jackson.databind.annotation.JsonNaming;
 
 import java.util.List;
 
 public class PutRequestDto {
     private String name;
     private int age;
-
     private List<CarDto> carList;
 
     public String getName() {
