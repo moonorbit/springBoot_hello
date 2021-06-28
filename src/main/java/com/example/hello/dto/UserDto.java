@@ -1,6 +1,5 @@
 package com.example.hello.dto;
 
-<<<<<<< HEAD
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.PropertyNamingStrategy;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
@@ -10,11 +9,6 @@ import com.fasterxml.jackson.databind.annotation.JsonNaming;
 public class UserDto {
     private String name;
     private Integer age;
-=======
-public class UserDto {
-    private String name;
-    private int age;
->>>>>>> 70ec1761363035f2dfb68fff0e51417a006af997
     private String phoneNumber;
     private String address;
 
@@ -26,11 +20,7 @@ public class UserDto {
         this.name = name;
     }
 
-<<<<<<< HEAD
     public Integer getAge() {
-=======
-    public int getAge() {
->>>>>>> 70ec1761363035f2dfb68fff0e51417a006af997
         return age;
     }
 
@@ -53,7 +43,6 @@ public class UserDto {
     public void setAddress(String address) {
         this.address = address;
     }
-<<<<<<< HEAD
 
     @Override
     public String toString() {
@@ -64,6 +53,4 @@ public class UserDto {
                 ", address='" + address + '\'' +
                 '}';
     }
-=======
->>>>>>> 70ec1761363035f2dfb68fff0e51417a006af997
 }
